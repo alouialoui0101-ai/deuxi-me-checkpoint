@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site d'Éducation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f9f9;
+        }
+        
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #ffe066;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: white;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        #home {
+            background-color: #e9f5f2;
+        }
+        
+        #about {
+            background-color: #d8f3dc;
+        }
+        
+        #work {
+            background-color: #b7e4c7;
+        }
+        
+        #resume {
+            background-color: #95d5b2;
+        }
+        
+        #contact {
+            background-color: #40916c;
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        form input[type="submit"] {
+            background-color: #1b4332;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #081c15;
+        }
+        
+        footer {
+            background-color: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Plateforme d'Éducation</h1>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#work">Cours</a>
+            <a href="#resume">Programme</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bienvenue</h2>
+        <p>Notre site d’éducation propose des formations modernes en informatique, sciences et langues.</p>
+    </section>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes une plateforme dédiée à l’apprentissage en ligne pour tous les niveaux.</p>
+
+        <h3>Nos domaines :</h3>
+        <ul>
+            <li>Développement Web</li>
+            <li>Informatique</li>
+            <li>Mathématiques</li>
+            <li>Langues étrangères</li>
+        </ul>
+
+        <h3>Présentation vidéo :</h3>
+        <video width="320" controls>
+        <source src="video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    </section>
+
+    <section id="work">
+        <h2>Nos Cours</h2>
+
+        <table>
+            <tr>
+                <th>Formation</th>
+                <th>Durée</th>
+                <th>Niveau</th>
+            </tr>
+            <tr>
+                <td>HTML & CSS</td>
+                <td>3 Mois</td>
+                <td>Débutant</td>
+            </tr>
+            <tr>
+                <td>Power BI</td>
+                <td>2 Mois</td>
+                <td>Intermédiaire</td>
+            </tr>
+            <tr>
+                <td>Base de données SQL</td>
+                <td>2 Mois</td>
+                <td>Débutant</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="resume">
+        <h2>Programme Annuel</h2>
+        <p>Téléchargez notre programme complet :</p>
+        <a href="programme.pdf">Voir le programme</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+
+        <form>
+            <label>Nom :</label>
+            <input type="text" name="nom" required>
+
+            <label>Email :</label>
+            <input type="email" name="email" required>
+
+            <label>Message :</label>
+            <textarea name="message" rows="4" required></textarea>
+
+            <br><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Plateforme d'Éducation | Tous droits réservés</p>
+    </footer>
+
+</body>
+
+</html>
